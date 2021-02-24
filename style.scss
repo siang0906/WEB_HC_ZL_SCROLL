@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;    
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100px;
+    // 固定nav 以下搭配使用
+    position: fixed;
+    width: 100%;
+
+    a {
+        padding: 30px;
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 80px;
+    color: #fff;
+
+    // 基數偶數 屬性
+    &:nth-of-type(odd) {
+        background: rgb(73, 192, 166);
+    }
+    &:nth-of-type(even) {
+        background: rgb(228, 110, 198);
+    }
+}
